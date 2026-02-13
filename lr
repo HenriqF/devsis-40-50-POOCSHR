@@ -1,0 +1,3 @@
+
+cmd /c rd /s /q "\\?\C:\Users\henri\Documentos\projetos\p\projetosCSHR\APIdotnetTesteDEVSIS\bin"
+cmd /c rd /s /q "\\?\C:\Users\henri\Documentos\projetos\p\projetosCSHR\APIdotnetTesteDEVSIS\obj"

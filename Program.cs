@@ -8,6 +8,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IAnimalService, AnimalService>();
 builder.Services.AddSingleton<ITesteService, TesteService>();
+builder.Services.AddSingleton<ICriptoService, CriptoService>();
 
 var app = builder.Build();
 
