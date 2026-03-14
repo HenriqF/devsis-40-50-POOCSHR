@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 
-namespace ZooApi.Services;
+namespace Api.Services;
 
 public class CriptoService : ICriptoService
 {

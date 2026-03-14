@@ -1,11 +1,11 @@
 
 using Microsoft.AspNetCore.Mvc;
-using ZooApi.Services;
+using Api.Services;
 
-namespace ZooApi.Controllers;
+namespace Api.Controllers;
 
 [ApiController]
-[Route("apiteste/[controller]")]
+[Route("[controller]")]
 public class TesteController : ControllerBase
 {
     private static readonly string teste = "teste";
@@ -22,10 +22,34 @@ public class TesteController : ControllerBase
         return Ok(teste);
     }
 
-    [HttpGet("{name}")]
+    [HttpGet("binario/{name}")]
     public IActionResult GetBala(string name)
     {
         var result = _testeService.emBinario(name);
         return Ok(result);
+    }
+
+
+    [HttpGet("profissao/{name}")]
+    public IActionResult GetPessoaProfissao(string name)
+    {
+        var result = _testeService.GetPessoa(name);
+        if (result == null)
+        {
+            return Ok("null");
+        }
+        return Ok(result.profissao());
+    }
+
+    [HttpPost("escovar/{name}")]
+    public IActionResult FazerEscovar(string name)
+    {
+        var result = _testeService.GetPessoa(name);
+        if (result == null)
+        {
+            return Ok("null");
+        }
+
+        return Ok(result.escovarOsDentes());
     }
 }

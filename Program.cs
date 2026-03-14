@@ -1,4 +1,4 @@
-using ZooApi.Services;
+using Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,7 +6,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<IAnimalService, AnimalService>();
 builder.Services.AddSingleton<ITesteService, TesteService>();
 builder.Services.AddSingleton<ICriptoService, CriptoService>();
 

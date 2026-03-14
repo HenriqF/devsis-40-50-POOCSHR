@@ -1,0 +1,33 @@
+GET http://localhost:5018/Cripto/sha1/teste
+
+###
+
+GET http://localhost:5018/Teste
+
+###
+
+GET http://localhost:5018/Teste/binario/abcdef
+
+
+###
+
+GET http://localhost:5018/Teste/Profissao/Pedro
+
+###
+
+GET http://localhost:5018/Teste/Profissao/Pablo
+
+
+###
+
+GET http://localhost:5018/Teste/Profissao/Paola
+
+
+###
+
+POST http://localhost:5018/Teste/escovar/Paulo
+
+
+###
+
+POST http://localhost:5018/Teste/escovar/Paola
